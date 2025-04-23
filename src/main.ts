@@ -70,11 +70,12 @@ export function trackEvent(
   }
 
   let now = new Date();
+  /*
   const diffInMs = now.getTime() - _lastTouched.getTime();
   const diffInSec = Math.floor(diffInMs / 1000);
   if (diffInSec > SESSION_TIMEOUT) {
     _sessionId = newSessionId();
-  }
+  }*/
   _lastTouched = now;
 
   const body = {
